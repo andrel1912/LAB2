@@ -1,23 +1,22 @@
 from shape import Shape
 
 class Rectangle(Shape):
+    
     def __init__(self, x=0, y=0, width=1, height=1):
-# Använder Shape för position
         super().__init__(x, y)
-
-# kollar att bredden och höjden är positiva
+        """Kollar att rektangeln är positiv. Visar ValueError om b eller h inte är positiv"""
         if width <= 0 or height <= 0:
             raise ValueError("Bredd och höjd måste vara positiva")        
         self.width = width
         self.height = height
 
-#area
     @property
     def area(self):
+        """Rektangelns area"""
         return self.width * self.height
     
-# omkrets
     def perimeter(self):
+        """Rektangelns omkrets"""
         return 2 * (self.width + self.height)
     
 # Kollar att rektangeln är en kvadrat
