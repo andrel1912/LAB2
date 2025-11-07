@@ -11,22 +11,22 @@ class Shape:
         pass
     
 # Flyttar formen
-    def move(self , dx, dy):
+    def move(self, dx, dy):
         self.x += dx
         self.y += dy
 
 # Jämförelser baserat på arean 
     def __eq__(self, other):
-        return self.area() == other.area()
+        return self.area == other.area
     
     def __lt__(self, other):
-        return self.area() < other.area()
+        return self.area < other.area
     
     def __le__(self, other):
-        return self.area() <= other.area()
+        return self.area <= other.area
     
     def __gt__(self, other):
-        return self.area() > other.area()
+        return self.area > other.area
 
     def __ge__(self, other):
-        return self.area() >= other.area()
+        return self.area >= other.area
