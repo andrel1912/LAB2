@@ -26,3 +26,6 @@ class Circle(Shape):
 # utskrift/felsökning i terminalen
     def __repr__(self):
         return f"Circle(x={self.x}, y={self.y}, radius={self.radius})"
+    
+    def __str__(self):
+        return f"Cirkel({self.x}, {self.y}), radie: {self.radius}"
