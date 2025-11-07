@@ -12,11 +12,11 @@ class Rectangle(Shape):
 
     @property
     def area(self):
-        """Rektangelns area"""
+        """Returnerar Rektangelns area"""
         return self.width * self.height
     
     def perimeter(self):
-        """Rektangelns omkrets"""
+        """Returnerar Rektangelns omkrets"""
         return 2 * (self.width + self.height)
     
 # Kollar att rektangeln är en kvadrat

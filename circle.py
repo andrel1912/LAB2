@@ -11,12 +11,12 @@ class Circle(Shape):
 
     @property
     def area(self):
-        """cirkelns area"""
+        """Returnerar cirkelns area"""
         return math.pi * self.radius ** 2
     
     @property
     def perimeter(self):
-        """cirkelns omkrets"""
+        """Returnerar cirkelns omkrets"""
         return 2 * math.pi * self.radius
     
     def is_unit_circle(self):

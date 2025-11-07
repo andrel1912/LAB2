@@ -1,21 +1,30 @@
 class Shape:
-# class för formerna
+    """klass för geometriska former x och y"""
+
+
     def __init__(self, x=0, y=0):
+        """sätter igång formen med pos x och y"""
         self.x = x
         self.y = y
     
+
     def area(self):
+        """Returnerar arean"""
         pass
 
+
     def perimeter(self):
+        """Returnerar omkretsen"""
         pass
     
-# Flyttar formen
     def move(self, dx, dy):
+        """dx flyttar formen horisontellt, dy vertikalt"""
         self.x += dx
         self.y += dy
 
-# Jämförelser baserat på arean 
+
+        """Gör jämförelsemetoder baserade på area"""
+
     def __eq__(self, other):
         return self.area == other.area
     
