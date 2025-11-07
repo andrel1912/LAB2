@@ -7,7 +7,7 @@ class Rectangle(Shape):
 
 # kollar att bredden och höjden är positiva
         if width <= 0 or height <= 0:
-            raise ValueError("Width and height must be positive")        
+            raise ValueError("Bredd och höjd måste vara positiva")        
         self.width = width
         self.height = height
 
