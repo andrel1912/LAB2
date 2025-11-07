@@ -8,7 +8,7 @@ class Circle(Shape):
 
 # Kollar så att radien är positiv
         if radius <= 0:
-            raise ValueError("Radius must be positive")
+            raise ValueError("Radien måste vara positiv")
         self.radius = radius
 
     @property
