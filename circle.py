@@ -21,7 +21,7 @@ class Circle(Shape):
         return 2 * math.pi * self.radius
     
     def is_unit_circle(self):
-        return self.radius == 1 and self .x == 0 and self.y == 0
+        return self.radius == 1 and self.x == 0 and self.y == 0
     
 # utskrift/felsökning i terminalen
     def __repr__(self):
